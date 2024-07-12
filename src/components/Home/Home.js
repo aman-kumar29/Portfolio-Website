@@ -4,8 +4,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import Particle from "../Particle";
-import Home2 from "./Home2";
+// import Home2 from "./Home2";
+import About from "../About/About.js"
 import Type from "./Type";
+import Projects from "../Projects/Projects";
 
 function Home() {
   return (
@@ -48,7 +50,9 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
+      {/* <Home2 /> */}
+      <About/>
+      <Projects/>
     </section>
   );
 }

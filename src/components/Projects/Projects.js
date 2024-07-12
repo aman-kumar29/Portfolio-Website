@@ -6,8 +6,10 @@ import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
+import download from "../../Assets/Projects/download.jpg";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import Github from "../About/Github";
 
 function Projects() {
   return (
@@ -15,23 +17,56 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong style ={{color:"#CF1D2A"}}>Works </strong>
+          My Recent <strong style={{ color: "#CF1D2A" }}>Works </strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }} >
+          {/* <Col md={4} className="project-card">
+            <ProjectCard
+            imgPath={chatify}
+            isBlog={false}
+            title="Multimodal Sentiment Analysis"
+            description="Developed an ML model that applies deep learning techniques to extract
+            sentiment from diverse modalities with high accuracy"
+            ghLink="https://github.com/aman-kumar29/multimodal-sentiment-analysis"
+            // demoLink="https://chatify-49.web.app/"
+            />
+            </Col> */}
+
+
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={editor}
               isBlog={false}
-              title="Multimodal Sentiment Analysis"
-              description="Developed an ML model that applies deep learning techniques to extract
-              sentiment from diverse modalities with high accuracy"
-              ghLink="https://github.com/aman-kumar29/multimodal-sentiment-analysis"
-              // demoLink="https://chatify-49.web.app/"
+              title="Night Canteen Management"
+              description="Built a full-stack web app using the MERN stack, featuring cart and order functionalities for food items. An admin-only panel enables efficient management of food items, enhancing overall operations and user experience."
+              ghLink="https://github.com/aman-kumar29/NightCanteen"
+              demoLink="https://canteen-web-deployed.onrender.com/"
             />
           </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={download}
+              isBlog={false}
+              title="Video Conferencing Website"
+              description="Built a video conferencing platform with HTML, CSS, JavaScript, WebRTC, and Agora SDKs for 50+ users. Features included screen sharing, low latency, 15+ concurrent streams, and real-time chat for enhanced user engagement."
+              ghLink="https://github.com/aman-kumar29/Video-Conferencing-Website"
+              demoLink="https://video-conferencing-website-woad.vercel.app/"
+            />
+          </Col>
+
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={chatify}
+                isBlog={false}
+                title="PDF Question Answering"
+                description="Created a PDF question-answering app with Langchain and Google's Palm model using RAG. Built a Streamlit app for real-time querying, leveraging ChromaDB for fast vector storage and retrieval, reducing query response times."
+                ghLink="https://github.com/aman-kumar29/Ask-PDF"
+              // demoLink="https://chatify-49.web.app/"
+              />
+            </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -44,29 +79,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Night Canteen Management"
-              description="A full-stack web development project built using the MERN (MongoDB, Express, React, Node.js) stack. The website offers various functionalities, including adding food items to a cart and placing orders, along with an admin panel accessible only to the admin for managing food items."
-              ghLink="https://github.com/aman-kumar29/Night-Canteen-Management-Website"
-              demoLink="https://dull-gold-kitten-cape.cyclic.app/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Shiru Cafe Clone"
-              description="An App Development project using JetPack ComposeThis Shiru Cafe Clone App is clone of an app on Google PLayStore namely Shiru Cafe which allows a few University / College Students to get Cold or Hot Drink for FREE!!!"
-              ghLink="https://github.com/aman-kumar29/ShiruCafeClone"
-              demoLink="https://drive.google.com/drive/folders/119INRWtUMjvB9IUrsKPtMdiPH-jJOAp3"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
@@ -75,20 +88,20 @@ function Projects() {
               ghLink="https://github.com/aman-kumar29/Semantic-Analysis-with-LSTM"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
-          </Col>
+          </Col> */}
 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
               title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 65.60%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              description="Trained a CNN classifier with FER-2013 using Keras and TensorFlow, achieving 65.60% accuracy in predicting human emotions. Used OpenCV to detect faces in images and pass them to the classifier for emotion prediction."
               ghLink="https://github.com/aman-kumar29/Face-Emotion-Recognition"
             />
           </Col>
         </Row>
       </Container>
+      <Github />
     </Container>
   );
 }

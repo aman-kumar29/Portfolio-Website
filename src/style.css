@@ -452,6 +452,7 @@ button:focus {
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-color: #111010 !important;
+  color: white !important;
 }
 
 .project-card {
@@ -554,7 +555,7 @@ button:focus {
 }
 
 .tech-icons {
-  font-size: 4.5em !important;
+  font-size: 3.0em !important;
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;

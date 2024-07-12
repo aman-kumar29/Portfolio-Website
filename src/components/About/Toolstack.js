@@ -11,19 +11,19 @@ import {
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={1} md={1} className="tech-icons">
         <SiVisualstudiocode />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={1} md={1} className="tech-icons">
         <SiPostman />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={1} md={1} className="tech-icons">
         <SiDocker />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={1} md={1} className="tech-icons">
         <SiAndroidstudio />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={1} md={1} className="tech-icons">
         <SiJupyter />
       </Col>
       {/* Add more tools as needed */}
